@@ -12,7 +12,21 @@
     public string email;
     public string observacoes;
     public DateTime dataInclusao = new DateTime();
-    public bool clienteAtivo;
+    private bool clienteAtivo;
+
+    public void RegistrarStatusCLiente(bool value)
+    {
+
+        clienteAtivo = value;
+
+    }
+
+    public bool ExibirStatusCliente()
+    {
+
+        return clienteAtivo;
+
+    }
 
     public void ExibirCadastroCliente()
     {
@@ -29,7 +43,7 @@
         Console.WriteLine($"Observações: {observacoes}");
         Console.WriteLine($"Data de inclusão: {dataInclusao}");
 
-        if(clienteAtivo == true)
+        if(ExibirStatusCliente())
         {
 
             Console.WriteLine("Status: ativo\n\n");
