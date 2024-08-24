@@ -12,21 +12,22 @@
     public string email;
     public string observacoes;
     public DateTime dataInclusao = new DateTime();
-    private bool clienteAtivo;
+    public bool ClienteAtivo { get; set; }
 
-    public void RegistrarStatusCLiente(bool value)
-    {
+    //se tornam desnecessários por conta das propriedades get set
+    //public void RegistrarStatusCLiente(bool value)
+    //{
 
-        clienteAtivo = value;
+    //    clienteAtivo = value;
 
-    }
+    //}
 
-    public bool ExibirStatusCliente()
-    {
+    //public bool ExibirStatusCliente()
+    //{
 
-        return clienteAtivo;
+    //    return clienteAtivo;
 
-    }
+    //}
 
     public void ExibirCadastroCliente()
     {

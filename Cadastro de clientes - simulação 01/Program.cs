@@ -32,7 +32,7 @@ cliente01.celular = 11981198884;
 cliente01.email = "juliogomespena@gmail.com";
 cliente01.observacoes = "Filho do Elias e da Valderez.";
 cliente01.dataInclusao = DateTime.Now;
-cliente01.RegistrarStatusCLiente(true);
+cliente01.ClienteAtivo = true;
 
 Cliente cliente02 = new();
 
@@ -47,7 +47,7 @@ cliente02.celular = 11973695363;
 cliente02.email = "lorenarezende@gmail.com";
 cliente02.observacoes = "Filha do Josué e da Adriana.";
 cliente02.dataInclusao = DateTime.Now;
-cliente02.RegistrarStatusCLiente(false);
+cliente02.ClienteAtivo = false;
 
 
 
