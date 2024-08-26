@@ -5,10 +5,7 @@ class Cliente
 {
 
     public int IdCliente => GerarIdCliente();
-    public int IdGrupo => idGrupo;
-    private int idGrupo;
-    public string NomeGrupo => nomeGrupo;
-    private string nomeGrupo;
+    public Grupo Grupo { get; set; }
     public string Nome { get; set; }
     public string Sobrenome { get; set; }
     public long Cpf { get; set; }
@@ -42,7 +39,7 @@ class Cliente
         Console.WriteLine($"ID: {IdCliente}");
         Console.WriteLine($"Nome: {NomeCompleto}");
         Console.WriteLine($"CPF: {Convert.ToUInt64(Cpf).ToString(@"000\.000\.000-00")}");
-        Console.WriteLine($"Nível da conta: {IdGrupo} {NomeGrupo}");
+        Console.WriteLine($"Nível da conta: {Grupo.IdGrupo} {Grupo.NomeGrupo}");
         Console.WriteLine($"Aniversário: {DataAniversario.ToString("dd/MM/yyyy")}");
         Console.WriteLine($"Profissão: {Profissao}");
         Console.WriteLine($"Como nos conheceu: {ComoConheceu}");
@@ -78,8 +75,7 @@ class Cliente
     public void VincularGrupo(Grupo grupo)
     {
 
-        idGrupo = grupo.IdGrupo;
-        nomeGrupo = grupo.NomeGrupo;
+        Grupo = grupo;
 
     }
 
