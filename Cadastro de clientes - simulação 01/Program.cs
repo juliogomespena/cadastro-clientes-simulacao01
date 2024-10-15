@@ -72,7 +72,7 @@ cliente03.Observacoes = "Filho do Julio e da Lorena.";
 cliente03.ClienteAtivo = true;
 
 
-//Cria e atribui informações ao cliente03
+//Cria e atribui informações ao cliente04
 Cliente cliente04 = new();
 
 cliente04.Nome = "Valderez";
@@ -90,38 +90,38 @@ cliente04.ClienteAtivo = false;
 
 
 //Cria grupo GoldPlus
-Grupo goldPlus = new();
+Grupo goldPlus = new("Gold Plus Account");
 {
 
-    goldPlus.NomeGrupo = "Gold Plus Account";
+    //goldPlus.NomeGrupo = "Gold Plus Account";
     goldPlus.Descricao = "Clientes com compra mensal acima de R$50.000,00";
 
 }
 
 
 //Cria grupo Gold
-Grupo gold = new();
+Grupo gold = new("Gold Account");
 {
 
-    gold.NomeGrupo = "Gold Account";
+    //gold.NomeGrupo = "Gold Account";
     gold.Descricao = "Clientes com compra mensal acima de R$30.000,00";
 
 }
 
 //Cria grupo Silver Plus
-Grupo silverPlus = new();
+Grupo silverPlus = new("Silver Plus Account");
 {
 
-    silverPlus.NomeGrupo = "Silver Plus Account";
+    //silverPlus.NomeGrupo = "Silver Plus Account";
     silverPlus.Descricao = "Clientes com compra mensal acima de R$20.000,00";
 
 }
 
 //Cria grupo Silver
-Grupo silver = new();
+Grupo silver = new("Silver Account");
 {
 
-    silver.NomeGrupo = "Silver Account";
+    //silver.NomeGrupo = "Silver Account";
     silver.Descricao = "Clientes com compra mensal acima de R$15.000,00";
 
 }

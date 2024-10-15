@@ -1,9 +1,13 @@
 ﻿class Grupo
 {
-
+    //Teste construtores
+    public Grupo(string Nome)
+    {
+        NomeGrupo = Nome;
+    }
     public  int IdGrupo => GerarIdGrupo();
 
-    public string NomeGrupo { get; set; }
+    public string NomeGrupo { get; }
 
     public string Descricao { get; set; }
 

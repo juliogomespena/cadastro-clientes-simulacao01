@@ -1,7 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-using System.Threading.Tasks.Dataflow;
-
-class Cliente
+﻿class Cliente
 {
 
     public int IdCliente => GerarIdCliente();
@@ -39,7 +36,7 @@ class Cliente
         Console.WriteLine($"ID: {IdCliente}");
         Console.WriteLine($"Nome: {NomeCompleto}");
         Console.WriteLine($"CPF: {Convert.ToUInt64(Cpf).ToString(@"000\.000\.000-00")}");
-        Console.WriteLine($"Nível da conta: {Grupo.IdGrupo} {Grupo.NomeGrupo}");
+        Console.WriteLine($"Nível da conta: {Grupo.IdGrupo} {Grupo.NomeGrupo} - {Grupo.Descricao}");
         Console.WriteLine($"Aniversário: {DataAniversario.ToString("dd/MM/yyyy")}");
         Console.WriteLine($"Profissão: {Profissao}");
         Console.WriteLine($"Como nos conheceu: {ComoConheceu}");
@@ -78,23 +75,6 @@ class Cliente
         Grupo = grupo;
 
     }
-
-
-
-    //se tornam desnecessários por conta das propriedades get set
-    //public void RegistrarStatusCLiente(bool value)
-    //{
-
-    //    clienteAtivo = value;
-
-    //}
-
-    //public bool ExibirStatusCliente()
-    //{
-
-    //    return clienteAtivo;
-
-    //}
 
 }
 
